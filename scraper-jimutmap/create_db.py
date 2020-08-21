@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS data (
 );
 ''')
 
-lapse = 0.05
+lapse = 0.15
 count = 1
 for i in np.arange(22.35,23,lapse):
     for j in np.arange(88,88.5,lapse):
