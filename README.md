@@ -10,5 +10,5 @@ M.Sc. term project for Satellite Segmentation of images using Deep Learning.
 2. Building Detection (https://spacenet.ai/)
 3. Road Network detection (https://spacenet.ai/)
 4. Weather based detections
-
+5. GANs perhaps?
 ***
