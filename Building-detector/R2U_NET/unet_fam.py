@@ -1354,15 +1354,15 @@ import glob
 test_img_all = glob.glob('original_img_test/*')
 # print(len(test_img_all))
 # print(test_img_all[:10])
-
+test_img_all.sort()
 test_label = glob.glob('ground_truth_test/*')
 # print(len(test_label))
 # print(test_label[:10])
-
+test_label.sort()
 t_data = 'original_img_train/'
 l_data = 'ground_truth_train/'
-test_image = test_img_all[0] #'original_img_test/TCGA_DU_7019_19940908_19.tif'
-test_label = test_label[0] #'ground_truth_test/TCGA_DU_7019_19940908_19_mask.tif'
+test_image = test_img_all[5] #'original_img_test/TCGA_DU_7019_19940908_19.tif'
+test_label = test_label[5] #'ground_truth_test/TCGA_DU_7019_19940908_19_mask.tif'
 test_folderP = 'original_img_test/*'
 test_folderL = 'ground_truth_test/*'
 
