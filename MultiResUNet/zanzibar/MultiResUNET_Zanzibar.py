@@ -387,7 +387,7 @@ from tensorflow.keras.metrics import Recall, Precision
 import json 
 
 def trainStep(model, X_train, Y_train, X_test, Y_test, epochs, batchSize):
-    epochs = 10
+    #epochs = 10
     #for epoch in range(epochs):
     #print('Epoch : {}'.format(epoch+1))
     history = model.fit(x=X_train, y=Y_train, batch_size=batchSize, epochs=epochs, verbose=1)
