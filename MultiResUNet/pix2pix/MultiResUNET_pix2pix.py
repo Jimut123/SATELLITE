@@ -15,7 +15,7 @@ from sklearn.metrics import classification_report
 import glob
 
 
-%tensorflow_version 2.x
+#%tensorflow_version 2.x
 import tensorflow as tf
 device_name = tf.test.gpu_device_name()
 if device_name != '/device:GPU:0':
