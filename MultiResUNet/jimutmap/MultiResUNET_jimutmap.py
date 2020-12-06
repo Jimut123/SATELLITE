@@ -42,7 +42,7 @@ print(len(msk_files))
 X = []
 Y = []
 
-for img_fl in tqdm(img_files):
+for img_fl in tqdm(img_files[:25000]):
   #print(img_fl)
   #break
   img = cv2.imread('{}'.format(img_fl), cv2.IMREAD_COLOR)
