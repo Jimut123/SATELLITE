@@ -158,7 +158,7 @@ callbacks = [
 # optimization setup
 # sgd = SGD(lr=0.01, momentum=0.9, nesterov=True)
 nadam = Nadam(
-    learning_rate=0.0001, beta_1=0.9, beta_2=0.999, epsilon=1e-07#, name="Nadam"#, **kwargs
+    learning_rate=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-07#, name="Nadam"#, **kwargs
 )
 
 
@@ -187,12 +187,12 @@ history = model.fit(
             validation_data=(X_train, y_train),
             steps_per_epoch=len(X_train) // 64,
             callbacks=callbacks,
-            epochs=5,
+            epochs=1000,
             verbose=1)
 
-model.save('satseg5e_nadam.h5')
+model.save('satseg1000e_nadam.h5')
 from keras.models import load_model
-load_model('satseg5e_nadam.h5')
+load_model('satseg1000e_nadam.h5')
 
 with open('history.json', 'w') as f:
     json.dump(history.history, f)
