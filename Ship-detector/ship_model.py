@@ -199,6 +199,6 @@ with open('history.json', 'w') as f:
 
 with open('history.json') as f:
     d = json.load(f)
-    print(d)
+    #print(d)
 
 
